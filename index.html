@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Project</title>
+</head>
+<style>
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .ele {
+        background-image: url('https://media.istockphoto.com/id/1419410282/photo/silent-forest-in-spring-with-beautiful-bright-sun-rays.jpg?s=2048x2048&w=is&k=20&c=t9_zg20wVbrBoGn0tw__1fFq4ykeKs15TQQ3x-ehVC0=');
+        width: 100%;
+        height: 2000px;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+
+
+    }
+
+    .ele2 {
+        background-image: url('https://media.istockphoto.com/id/682236142/photo/silent-forest-in-spring-with-beautiful-bright-sun-rays.jpg?s=2048x2048&w=is&k=20&c=rMlahoQV7fX8FHbKzD7lYwBQDqcwz0Zvx4AxnaLlUzA=');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 700px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* display: flex;
+        justify-content: center;
+        text-align: center; */
+        margin-top: -30px;
+        background-attachment: fixed;
+
+
+    }
+
+    .para {
+        background-color: white;
+        background-attachment: scroll;
+        margin-bottom: 160px;
+        padding: 50px;
+        color: #282e34;
+
+
+    }
+
+    .para p {
+        margin: 40px;
+
+    }
+
+    .para1 {
+        background-color: #282e34;
+        /* background-attachment: fixed; */
+        margin-bottom: 260px;
+        color: white;
+        padding: 50px;
+
+    }
+
+    .box {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        background-color: #282e34;
+        text-transform: capitalize;
+        color: aliceblue;
+        width: 320px;
+        height: 60px;
+        font-size: 27px;
+        letter-spacing: 7px;
+        line-height: 60px;
+        background-attachment: fixed;
+    }
+
+    .box1 {
+        margin-left: 400px;
+        background-color: #282e34;
+        width: 400px;
+        height: 50px;
+        color: aliceblue;
+        line-height: 50px;
+        align-items: center;
+        display: flex;
+        font-size: 27px;
+
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    b {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        /* padding: 5px; */
+        font-size: 20px;
+    }
+
+    /* @media only screen and (max-device-width: 767px) {
+  body {
+    font-size: 14px;
+    display: block;
+  }
+  .box{
+    width: 100px;
+    font-size: 10px;
+  }
+  .ele{
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+  }
+}
+ */
+    /* Common styles for all devices */
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    /* Styles for mobile devices */
+    @media only screen and (max-width: 767px) {
+        .ele {
+            height: 800px;
+            display: block;
+            /* Adjust as needed */
+        }
+
+        .ele2 {
+            height: auto;
+            /* Adjust as needed */
+        }
+
+        .para,
+        .para1 {
+            margin-bottom: 80px;
+            font-size: 7px;
+            overflow: hidden;
+            /* Adjust as needed */
+        }
+
+        .box {
+            display: none;
+        }
+
+        .box1 {
+            margin-left: 75px;
+            padding: 15px;
+            /* Adjust as needed */
+            width: 200px;
+            /* Adjust as needed */
+            height: 40px;
+            text-align: center;
+            /* Adjust as needed */
+            font-size: 10px;
+            /* Adjust as needed */
+            line-height: 40px;
+            /* Adjust as needed */
+        }
+
+        b {
+            font-size: 11px;
+            /* Adjust as needed */
+        }
+    }
+
+    /* Styles for tablets */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        .ele {
+            height: 1200px;
+            /* Adjust as needed */
+        }
+
+        .ele2 {
+            height: 600px;
+            /* Adjust as needed */
+        }
+
+        .para,
+        .para1 {
+            margin-bottom: 120px;
+            /* Adjust as needed */
+        }
+
+        .box {
+            width: 280px;
+            /* Adjust as needed */
+            height: 50px;
+            /* Adjust as needed */
+            font-size: 24px;
+            /* Adjust as needed */
+            line-height: 50px;
+            /* Adjust as needed */
+        }
+
+        .box1 {
+            margin-left: 300px;
+            /* Adjust as needed */
+            width: 350px;
+            /* Adjust as needed */
+            height: 50px;
+            /* Adjust as needed */
+            font-size: 24px;
+            /* Adjust as needed */
+            line-height: 50px;
+            /* Adjust as needed */
+        }
+
+        b {
+            font-size: 18px;
+            /* Adjust as needed */
+        }
+    }
+</style>
+
+<body>
+    <div class="ele">
+        <h1 class="box">Parallax Website</h1>
+
+        <p class="para">
+            <b>Section One</b>
+            officiis quis pariatur repudiandae provident, dolore exercitationem esse, ut
+            doloremque veniam labore eveniet ullam sint ipsum facere saepe in
+            corporis tenetur nihil aliquid dolorem quisquam? Tenetur saepe cupiditate, laudantium, culpa perspiciatis
+            tempora fugit delectus accusantium quia incidunt impedit explicabo aliquam debitis itaque illo est minima?
+            Asperiores minus totam minima quibusdam inventore consectetur ratione corporis dolorem ea, sequi aperiam,
+            , ducimus architecto, repellendus est tempore.
+            Nostrum, cumque quasi atque assumenda dolore minima placeat iste, unde non qui debitis dolorum fuga ut
+            dolores tempore consequatur ipsum nesciunt hic velit earum nihil, omnis dicta natus cum. Veniam doloribus
+
+            exercitationem vero quasi quis quam, fuga laborum? Magnam, aliquam maxime ducimus cumque asperiores
+            consequuntur obcaecati ab repellat aut, explicabo autem provident pariatur officiis cum nemo illum unde
+            !
+        </p>
+        <h1 style="margin-bottom: 150px;" class="box1">EXPLORE NATURE</h1>
+        <p class="para1">
+            <b>Section Two</b>
+
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum quae illum recusandae
+            temporibus! Eaque volu
+            ptates veniam facere sequi nobis, cupiditate doloremque natus illo quos dolore impedit. Alias reiciendis
+            provident, dolore exercitationem esse, ut
+            doloremque? Facilis, quas dolorum iste dicta dolor sit labore illum vel odit vero hic minima ea eligendi
+            ipsa accusamus iusto
+            a omnis ad voluptas rerum odit hic! Esse
+            cum harum similique laboriosam repudiandae soluta ipsam voluptas dicta dolor eligendi architecto quos
+            dolorem nihil voluptate magnam voluptatum quam deserunt, sed commodi perferendis? Modi alias sunt doloremque
+            perferendis iusto molestias recusandae facilis numquam, ducimus architecto, repellendus est tempore.
+            Nostrum, cumque quasi atque assumenda dolore minima placeat iste, unde non qui debitis dolorum fuga ut
+            dolores tempore consequatur ipsum nesciunt hic velit earum nihil, omnis dicta natus cum. Veniam doloribus
+
+            exercitationem vero quasi quis quam, fuga laborum? Magnam, aliquam maxime ducimus cumque asperiores
+            consequuntur obcaecati ab repellat aut, explicabo autem provident pariatur officiis cum nemo illum unde
+            !
+        </p>
+        <h1 style="margin-bottom: 180px;" class="box1">Look deep into the nature</h1>
+
+    </div>
+    <div class="ele2">
+
+        <p class="para1">
+            <b>Section Three</b>
+
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque maiores sapiente et omnis nihil alias
+            voluptate, architecto adipisci veritatis impedit, vitae mollitia
+            rerum repudiandae ex corrupti molestiae esse suscipit. Reiciendis.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo aut delectus eos commodi a, ratione ad
+            incidunt exercitationem modi veritatis earum, dolor facilis nulla at perferendis libero soluta maiores
+            magnam.
+            100lorem
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa optio culpa libero ipsam, sequi sunt ratione
+            architecto alias a placeat sapiente qua
+            m non enim explicabo aperiam officiis nostrum quas totam.
+        </p>
+        <h1 class="box1">Do some coding</h1>
+
+    </div>
+
+
+</body>
+
+</html>
